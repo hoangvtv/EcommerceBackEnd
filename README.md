@@ -4,10 +4,10 @@ Java, SrpingBoot
 
 Data test file: https://drive.google.com/file/d/1fVPqmlPunRw6_7Lqtaf-BvvWnmloTz1P/view?usp=sharing
 
-Tải file SQL giải nén và tạo database trong mysql sau đó chạy từng file sql trong tệp tải về
+## B1: Tải file SQL giải nén và tạo database trong mysql sau đó chạy từng file sql trong tệp tải về
 
 
-Cấu hình file application.properties:
+## B2: Cấu hình file application.properties:
   
 
 
