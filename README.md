@@ -16,8 +16,8 @@ Data test file: https://drive.google.com/file/d/1fVPqmlPunRw6_7Lqtaf-BvvWnmloTz1
 spring.datasource.url=jdbc:mysql://localhost:3306/{{databaseName}}?useSSL=false 
 
 ## tài khoản và mất khẩu trong sql-workbech
-spring.datasource.username=root
-spring.datasource.password=04062001
+spring.datasource.username
+spring.datasource.password=
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.jpa.show-sql=true
 
