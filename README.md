@@ -1,30 +1,25 @@
 # EcommerceBackEnd
-Java, SrpingBoot
 
 
-Data test file: https://drive.google.com/file/d/1fVPqmlPunRw6_7Lqtaf-BvvWnmloTz1P/view?usp=sharing
+This branch demonstrates how to store the files in MySQL database.
 
-## B1: Tải file SQL giải nén và tạo database trong mysql sau đó chạy từng file sql trong tệp tải về
+Steps to Setup
+1. Clone the repository
 
+git clone https://github.com/hoangvtv/EcommerceBackEnd.git
+2. Configure MySQL database
 
-## B2: Cấu hình file application.properties:
-  
+Create a MySQL database named file_demo, and change the username and password in src/main/resources/application.properties as per your MySQL installation -
 
+spring.datasource.username= <YOUR MYSQL USERNAME>
+spring.datasource.password= <YOUR MYSQL PASSWORD>
+3. Run the app using maven
 
+cd spring-boot-file-upload-download-rest-api-example
+mvn spring-boot:run
+That's it! The application can be accessed at http://localhost:8080.
 
-## databaseName là data vừa tạo ở trên.. chú ý  đường dẫn đến database
-spring.datasource.url=jdbc:mysql://localhost:3306/{{databaseName}}?useSSL=false 
+You may also package the application in the form of a jar and then run the jar file like so -
 
-## tài khoản và mất khẩu trong sql-workbech
-spring.datasource.username
-spring.datasource.password=
-spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
-spring.jpa.show-sql=true
-
-## tạo server với port 8081
-server.port=8081
-## Hibernate Properties
-# The SQL dialect makes Hebernate generate better SQL for the chosen database
-spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL5InnoDBDialect
-# Hibernate ddl auto (create, create-drop, validate, update, none)
-spring.jpa.hibernate.ddl-auto=update
+mvn clean package
+java -jar target/file-demo-0.0.1-SNAPSHOT.jar
