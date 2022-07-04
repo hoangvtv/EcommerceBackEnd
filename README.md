@@ -12,6 +12,7 @@ git clone https://github.com/hoangvtv/EcommerceBackEnd.git
 Create a MySQL database named file_demo, and change the username and password in src/main/resources/application.properties as per your MySQL installation - 
 
 spring.datasource.username= <YOUR MYSQL USERNAME>
+  
 spring.datasource.password= <YOUR MYSQL PASSWORD>
 
 ## 3. Run the app using maven
