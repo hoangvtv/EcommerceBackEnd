@@ -3,17 +3,18 @@
 
 This branch demonstrates how to store the files in MySQL database.
 
-Steps to Setup
-1. Clone the repository
+## Steps to Setup
+## 1. Clone the repository
 
 git clone https://github.com/hoangvtv/EcommerceBackEnd.git
-2. Configure MySQL database
+## 2. Configure MySQL database
 
-Create a MySQL database named file_demo, and change the username and password in src/main/resources/application.properties as per your MySQL installation -
+Create a MySQL database named file_demo, and change the username and password in src/main/resources/application.properties as per your MySQL installation - 
 
 spring.datasource.username= <YOUR MYSQL USERNAME>
 spring.datasource.password= <YOUR MYSQL PASSWORD>
-3. Run the app using maven
+
+## 3. Run the app using maven
 
 cd spring-boot-file-upload-download-rest-api-example
 mvn spring-boot:run
